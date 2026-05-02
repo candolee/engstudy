@@ -3,13 +3,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  projectId: "scordboard",
-  appId: "1:30546922123:web:375c502f5213ca9de8228e",
-  storageBucket: "scordboard.firebasestorage.app",
-  apiKey: "AIzaSyA7Ks3Iftl0OQfYEM-fMdqbPvk7Os5kbmA",
-  authDomain: "scordboard.firebaseapp.com",
-  messagingSenderId: "30546922123",
-  measurementId: "G-FWXJGHS5DD",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
